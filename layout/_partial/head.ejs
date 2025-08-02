@@ -77,4 +77,39 @@
 		</script>
 		<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
 	<% } %>
+	
+	<!-- custom blockquote styles -->
+	<style>
+		.content blockquote {
+			margin: 1rem 10px !important;
+			padding: 0.5em 10px !important;
+			background: #fff9e6 !important;
+			color: #666 !important;
+			font-weight: bold !important;
+			border-left: 4px solid #ff4444 !important;
+			font-style: italic !important;
+			quotes: none !important;
+		}
+		
+		.content blockquote:before {
+			content: none !important;
+			display: none !important;
+		}
+		
+		.content blockquote p {
+			margin: 0 !important;
+		}
+		
+		.content blockquote blockquote {
+			margin-left: 1rem !important;
+			border-left-color: #ff6666 !important;
+			color: #999 !important;
+			background: #fffaed !important;
+		}
+		
+		.content blockquote blockquote:before {
+			content: none !important;
+			display: none !important;
+		}
+	</style>
 </head>
